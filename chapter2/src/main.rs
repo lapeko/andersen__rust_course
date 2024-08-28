@@ -1,4 +1,4 @@
-use std::io;@
+use std::io;
 
 fn main() {
     let mut user_input = String::new();
@@ -13,4 +13,10 @@ fn main() {
             println!("Something went wrong {}", err)
         }
     }
+
+    // printing values
+    println!("{0} has a {1} and {0} also has a {2}", "Vitali", "cat", "dog");
+    println!("{name} {surname}", name="Jim", surname="Carrey");
+    println!("Debug an array: {:?}", [1, 2, 3]);
+    println!("Binary {:b}, Octal {:o}, Hex {:x}", 5, 5, 5);
 }
